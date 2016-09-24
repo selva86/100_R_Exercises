@@ -77,3 +77,48 @@ test_error()
 
 success_msg("Good work!")
 ```
+
+
+--- type:NormalExcercise lang:r xp:100 key:fba8d445ff
+# Really bad movie
+
+Hey did you know vivek is here
+
+*** =instructions
+ - This guy is going to teach you
+
+*** =hint
+ - Beware of this guy
+
+*** =pre_exercise_code
+```{r}
+# library(ggplot)
+data(cars)
+
+```
+*** =samplecode
+```{r}
+# cars data is available
+
+# display starting 10 lines of code
+
+```
+
+*** =solution
+```{r}
+# cars data is available
+
+# display starting 10 lines of code
+head(cars)
+```
+
+*** =sct
+```{r}
+test_function("head",args="object",
+    not_called_msg = "you havent called the function `head`",
+    incorrect_msg = "you havent called `function(object=...)` correctly with correct arg")
+
+test_obejct("cars")
+
+success_msg('I tought you very well :P')
+```
